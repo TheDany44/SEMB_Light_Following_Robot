@@ -1,0 +1,13 @@
+#include "../motor_control.cpp"
+#include "../rtdb.cpp"
+#include "../system_mode_manager.cpp"
+#include "../telemetry_tx.cpp"
+#include "../espnow_rx.cpp"
+#include <WiFi.h>
+#include "../commands.h"
+#include "../ultrasonic_task.cpp"
+#include "../ldr_task.cpp"
+#include "../calibration_task.cpp"
+#include "../light_processing_task.cpp"
+#include "../auto_control_task.cpp"
+#include "../manual_control_task.cpp"

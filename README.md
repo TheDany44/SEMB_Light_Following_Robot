@@ -11,6 +11,7 @@ The firmware runs on an **ESP32-S2 Super Mini** (configured in PlatformIO as `es
 
 Repo layout:
 - `LDR_ROBOT/` -> PlatformIO project (firmware)
+- `LDR_REMOTE/` -> PlatformIO project (ESP-NOW remote + web dashboard)
 
 ## Materials (hardware)
 
@@ -22,6 +23,14 @@ Repo layout:
 - Ultrasonic distance sensor
 - Generic 8-channel level shifter (3.3 V <-> 5 V)
 - Battery pack (typically 6-8 V) and jumper wires
+
+### Remote/controller
+
+- ESP32-C3 (on a perfboard)
+- 1x LED
+- 2x buttons
+- 1x joystick (with integrated push button)
+- Powered by USB
 
 ## Power and interfacing (important)
 
@@ -170,5 +179,12 @@ YouTube: **TBD** (link will be added here)
 
 ## Notes / upcoming
 
-- A separate **remote/controller** will be added to this repository in a future update.
+- The remote/controller firmware is in `LDR_REMOTE/`.
+
+## Remote web UI
+
+The remote exposes a Wi-Fi Access Point for its web dashboard.
+
+1. Connect to the remote's SSID.
+2. Open: http://192.168.4.1/
 
